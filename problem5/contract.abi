@@ -1,0 +1,38 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "accountAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "tokenAddresses",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalances",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TokenBalance.Result[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
